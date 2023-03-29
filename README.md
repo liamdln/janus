@@ -1,3 +1,3 @@
 # Project Janus
 
-A static website for the a VATSIM vACC.
+A static website for a VATSIM vACC.
