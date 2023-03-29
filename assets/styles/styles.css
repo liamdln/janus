@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Mulish, Arial, Helvetica, sans-serif !important;
+}
+
+header {
+    min-height: 50px;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 75px;
+}
+
+footer .vatsim-link {
+    color: #fff;
+}
+
+footer .vatsim-link:hover {
+    color: #fff;
+}
+
+.navbar {
+    z-index: 1;
+}
+
+.landing {
+    background: url("/assets/images/landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: calc(100vh);
+}
+
+.shadow {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+}
+
+.welcome-message {
+    margin-left: 20%;
+}
+
+.card-body {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    height: 100%;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0.7rem !important;
+}
+
+.card-title-colour {
+    color: #ffcb52;
+}
+
+.underline {
+    border-top: 5px solid #ffcb52;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 15%;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-message {
+        margin-left: 0;
+    }
+}
