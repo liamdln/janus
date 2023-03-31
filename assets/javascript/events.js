@@ -20,8 +20,15 @@ fetch("https://phoenix-api.vatsim.net/api/events")
                 }
             }
         }
+
         document.getElementById("event-img-loading").style.visibility = "hidden";
-        document.getElementById("event-images").innerHTML = arbEvents.join("")
+
+        if (arbEvents.length > 0) {
+            
+            document.getElementById("event-images").innerHTML = arbEvents.join("")
+        } else {
+            document.getElementById("event-images").innerHTML = "<div><em>There are no events planned.</em></div>"
+        }
 
     }).catch((err) => {
         console.log(err.message + " Will hide events section from document.");
